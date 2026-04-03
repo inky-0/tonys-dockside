@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boat Repair in Marco Island, FL | Tony's Dockside Services</title>
+  <meta name="description" content="Marco Island's premier boat repair shop since 1987. Mercury & Yamaha authorized service, Power-Pole dealer. Call (239) 642-0204.">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Tony's Dockside Services, LLC","telephone":"+12396420204","email":"tonysdockside@gmail.com","address":{"@type":"PostalAddress","streetAddress":"960 Chalmer Dr STE 107","addressLocality":"Marco Island","addressRegion":"FL","postalCode":"34145","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --orange: #1565C0;
+      --orange2: #0D47A1;
+      --dark:  #111111;
+      --dark2: #1a1a1a;
+      --dark3: #222222;
+      --card:  #181818;
+      --border: #2c2c2c;
+      --white: #ffffff;
+      --gray:  #999999;
+      --gray2: #cccccc;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito Sans', sans-serif; background: var(--dark); color: var(--white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    h1,h2,h3,h4,h5,h6 { font-family: 'Oswald', sans-serif; font-weight: 600; line-height: 1.15; }
+    .eyebrow { font-family: 'Nunito Sans', sans-serif; font-size: .82rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; display: block; }
+    .accent { color: var(--orange); }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; border-radius: 3px; font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 1rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: all .2s; border: none; }
+    .btn-orange { background: var(--orange); color: #fff; }
+    .btn-orange:hover { background: var(--orange2); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.4); }
+    .btn-outline:hover { border-color: #fff; }
+    .btn-ghost { background: transparent; color: var(--orange); border: 2px solid var(--orange); }
+    .btn-ghost:hover { background: var(--orange); color: #fff; }
+    .btn-sm { padding: 9px 18px; font-size: .85rem; }
+
+    /* ══ TOP BAR ══ */
+    #topbar { background: var(--dark2); border-bottom: 1px solid var(--border); padding: 11px 0; }
+    .topbar-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .topbar-left { display: flex; gap: 28px; flex-wrap: wrap; }
+    .tb-item { display: flex; align-items: center; gap: 7px; font-size: .83rem; color: var(--gray2); }
+    .tb-item i { color: var(--orange); font-size: .85rem; }
+    .tb-item a { color: var(--gray2); transition: color .15s; }
+    .tb-item a:hover { color: #fff; }
+    .tb-social { display: flex; gap: 12px; }
+    .tb-social a { color: var(--gray); font-size: .9rem; transition: color .15s; }
+    .tb-social a:hover { color: var(--orange); }
+
+    /* ══ NAV ══ */
+    #navbar { background: var(--dark); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+    .nav-logo { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+    .nav-logo .accent { color: var(--orange); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { font-family: 'Oswald', sans-serif; font-size: .95rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--gray2); transition: color .15s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-book { padding: 11px 22px; font-size: .9rem; }
+    .ham { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .ham span { display: block; width: 22px; height: 2px; background: #fff; margin: 4px 0; border-radius: 2px; }
+    #mob-nav { display: none; background: var(--dark2); border-bottom: 1px solid var(--border); }
+    #mob-nav a { display: block; padding: 13px 24px; font-family: 'Oswald', sans-serif; font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; color: var(--gray2); border-bottom: 1px solid var(--border); }
+    #mob-nav a:hover { color: #fff; background: var(--dark3); }
+    .mob-book { background: var(--orange) !important; color: #fff !important; text-align: center; margin: 14px 24px; border-radius: 3px; border-bottom: none !important; }
+
+    /* ══ HERO ══ */
+    #hero { position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; }
+    .hero-slides { position: absolute; inset: 0; }
+    .hero-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
+    .hero-slide.active { opacity: 1; }
+    .hero-slide img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; animation: kenBurns 8s ease-in-out forwards; }
+    @keyframes kenBurns { from { transform: scale(1); } to { transform: scale(1.08); } }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(10,10,10,.96) 0%, rgba(10,10,10,.80) 45%, rgba(10,10,10,.45) 100%); }
+    .hero-content { position: relative; z-index: 2; max-width: 700px; padding: 60px 0 80px; }
+    .hero-sub { font-family: 'Nunito Sans', sans-serif; font-size: .9rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gray); margin-bottom: 18px; }
+    .hero-h1 { font-size: clamp(2.6rem, 5.5vw, 4.2rem); font-weight: 700; text-transform: uppercase; line-height: 1.08; margin-bottom: 20px; }
+    .hero-desc { font-size: 1.05rem; color: var(--gray2); max-width: 520px; margin-bottom: 36px; line-height: 1.75; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* ══ TRUST BAR ══ */
+    #trust { background: var(--dark2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 0; }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .trust-item { display: flex; align-items: center; gap: 14px; padding: 8px 24px; border-right: 1px solid var(--border); }
+    .trust-item:last-child { border-right: none; }
+    .t-icon { font-size: 1.8rem; color: var(--orange); flex-shrink: 0; }
+    .t-text h4 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+    .t-text p { font-size: .82rem; color: var(--gray); margin-top: 2px; }
+
+    /* ══ ABOUT ══ */
+    #about { padding: 96px 0; background: var(--dark); }
+    .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; }
+    .about-text .eyebrow { margin-bottom: 10px; }
+    .about-text h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); text-transform: uppercase; margin-bottom: 24px; }
+    .about-text p { color: var(--gray2); margin-bottom: 16px; font-size: .97rem; }
+    .about-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+    .about-bullets li { display: flex; align-items: center; gap: 10px; font-family: 'Oswald', sans-serif; font-size: .95rem; text-transform: uppercase; letter-spacing: .04em; }
+    .about-bullets li i { color: var(--orange); font-size: .8rem; }
+    .about-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .about-img { position: relative; border-radius: 4px; overflow: hidden; }
+    .about-img img { width: 100%; height: 480px; object-fit: cover; object-position: center top; }
+
+    /* ══ SERVICES ══ */
+    #services { padding: 96px 0; background: var(--dark2); }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); text-transform: uppercase; margin-bottom: 16px; }
+    .section-header p { color: var(--gray); max-width: 580px; margin: 0 auto; font-size: .97rem; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .svc-card { background: var(--card); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: transform .25s, border-color .25s; }
+    .svc-card:hover { transform: translateY(-5px); border-color: var(--orange); }
+    .svc-img { position: relative; height: 200px; overflow: hidden; }
+    .svc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .svc-card:hover .svc-img img { transform: scale(1.06); }
+    .svc-icon-wrap { position: absolute; top: 12px; left: 12px; width: 42px; height: 42px; background: var(--orange); border-radius: 3px; display: flex; align-items: center; justify-content: center; }
+    .svc-icon-wrap i { color: #fff; font-size: 1.1rem; }
+    .svc-body { padding: 22px 20px; }
+    .svc-body h3 { font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+    .svc-body p { color: var(--gray); font-size: .88rem; line-height: 1.65; margin-bottom: 14px; }
+    .svc-link { display: inline-flex; align-items: center; gap: 6px; font-family: 'Oswald', sans-serif; font-size: .85rem; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; color: var(--orange); transition: gap .2s; }
+    .svc-link:hover { gap: 10px; }
+
+    /* ══ CALL BAND ══ */
+    #call-band { background: var(--dark3); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 48px 0; }
+    .call-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .call-text h2 { font-size: clamp(1.5rem, 3vw, 2rem); text-transform: uppercase; }
+    .call-text h2 .accent { color: var(--orange); }
+    .call-stats { display: flex; gap: 48px; }
+    .stat { text-align: center; }
+    .stat .num { font-family: 'Oswald', sans-serif; font-size: 2.8rem; font-weight: 700; color: var(--orange); line-height: 1; }
+    .stat .lbl { font-size: .78rem; color: var(--gray); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; }
+    .call-cta { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .call-phone { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700; color: var(--white); letter-spacing: .02em; transition: color .15s; }
+    .call-phone:hover { color: var(--orange); }
+
+    /* ══ WHY ══ */
+    #why { padding: 96px 0; background: var(--dark); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    .why-images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 260px 260px; gap: 10px; }
+    .why-img-main { grid-column: 1; grid-row: span 2; }
+    .why-img-main img, .why-images img { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
+    .why-img-sm img { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
+    .why-content { display: flex; flex-direction: column; gap: 20px; }
+    .why-content h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); text-transform: uppercase; }
+    .why-content > p { color: var(--gray2); font-size: .97rem; line-height: 1.8; }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+    .why-list li { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--dark2); border: 1px solid var(--border); border-radius: 3px; font-family: 'Oswald', sans-serif; font-size: .95rem; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; transition: border-color .15s; }
+    .why-list li:hover { border-color: var(--orange); }
+    .why-list li i { color: var(--orange); font-size: .9rem; width: 18px; flex-shrink: 0; }
+    .why-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+
+    /* ══ TESTIMONIALS ══ */
+    #testimonials { padding: 96px 0; background: var(--dark2); }
+    .testi-top { text-align: center; margin-bottom: 52px; }
+    .testi-top h2 { font-size: clamp(1.9rem, 3.5vw, 2.5rem); text-transform: uppercase; }
+    .testi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .testi-right { display: flex; flex-direction: column; gap: 16px; }
+    .testi-img { border-radius: 4px; overflow: hidden; }
+    .testi-img img { width: 100%; height: 100%; object-fit: cover; min-height: 340px; }
+    .testi-card { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 28px 26px; }
+    .testi-stars { color: var(--orange); font-size: .9rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .testi-text { color: var(--gray2); font-size: .93rem; line-height: 1.75; margin-bottom: 18px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--orange); display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; flex-shrink: 0; }
+    .testi-name { font-family: 'Oswald', sans-serif; font-size: .95rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+    .testi-source { font-size: .78rem; color: var(--gray); }
+    /* Auto-rotate testimonials */
+    .testi-slide { display: none; }
+    .testi-slide.active { display: block; }
+
+    /* ══ CONTACT ══ */
+    #contact { padding: 96px 0; background: var(--dark); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
+    .contact-photo { border-radius: 4px; overflow: hidden; }
+    .contact-photo img { width: 100%; height: 520px; object-fit: cover; object-position: center top; }
+    .contact-info { display: flex; flex-direction: column; gap: 0; }
+    .contact-info .eyebrow { margin-bottom: 8px; }
+    .contact-info h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); text-transform: uppercase; margin-bottom: 14px; }
+    .contact-info > p { color: var(--gray2); font-size: .95rem; line-height: 1.8; margin-bottom: 32px; }
+    .c-details { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+    .c-detail h5 { font-family: 'Oswald', sans-serif; font-size: .8rem; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--gray); margin-bottom: 6px; }
+    .c-detail a, .c-detail p { color: var(--gray2); font-size: .92rem; line-height: 1.6; }
+    .c-detail .big-phone { font-family: 'Oswald', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--orange); }
+    .c-detail .big-phone:hover { color: var(--orange2); }
+    .hrs { display: flex; flex-direction: column; gap: 3px; }
+    .hr-row { display: flex; justify-content: space-between; max-width: 190px; font-size: .85rem; color: var(--gray); }
+    .hr-row .d { color: var(--gray2); }
+    .map-frame { border-radius: 4px; overflow: hidden; }
+    .map-frame iframe { width: 100%; height: 260px; border: none; display: block; filter: grayscale(100%) invert(92%) contrast(83%) brightness(0.85); }
+
+    /* ══ FOOTER ══ */
+    footer { background: #0a0a0a; border-top: 1px solid var(--border); padding: 52px 0 24px; }
+    .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding-bottom: 36px; border-bottom: 1px solid var(--border); }
+    .foot-logo { font-family: 'Oswald', sans-serif; font-size: 1.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 10px; }
+    .foot-desc { font-size: .87rem; color: var(--gray); line-height: 1.8; max-width: 270px; margin-bottom: 18px; }
+    .foot-social { display: flex; gap: 10px; }
+    .foot-social a { width: 36px; height: 36px; border-radius: 3px; background: var(--dark2); border: 1px solid var(--border); color: var(--gray); display: flex; align-items: center; justify-content: center; font-size: .85rem; transition: all .15s; }
+    .foot-social a:hover { background: var(--orange); border-color: var(--orange); color: #fff; }
+    .foot-col h5 { font-family: 'Oswald', sans-serif; font-size: .85rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.7); margin-bottom: 16px; }
+    .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .foot-col ul li a { font-size: .87rem; color: var(--gray); transition: color .15s; }
+    .foot-col ul li a:hover { color: var(--orange); }
+    .foot-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 22px; flex-wrap: wrap; gap: 10px; }
+    .foot-bottom p { font-size: .8rem; color: var(--gray); }
+
+    /* Scroll top */
+    #top-btn { position: fixed; bottom: 22px; right: 22px; z-index: 500; width: 42px; height: 42px; border-radius: 3px; background: var(--orange); color: #fff; border: none; cursor: pointer; font-size: 1rem; display: none; align-items: center; justify-content: center; transition: background .15s; }
+    #top-btn:hover { background: var(--orange2); }
+    #top-btn.show { display: flex; }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-img { order: -1; }
+      .about-img img { height: 340px; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-images { grid-template-rows: 220px; grid-template-columns: 1fr 1fr 1fr; }
+      .why-img-main { grid-row: span 1; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-photo img { height: 320px; }
+      .foot-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      #topbar { display: none; }
+      .nav-links { display: none; }
+      .nav-book { display: none; }
+      .ham { display: block; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item { border-right: none; border-bottom: 1px solid var(--border); padding: 14px 0; }
+      .trust-item:last-child { border-bottom: none; }
+      .svc-grid { grid-template-columns: 1fr; }
+      .call-inner { flex-direction: column; text-align: center; }
+      .call-cta { align-items: center; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .testi-img { display: none; }
+      .c-details { grid-template-columns: 1fr; }
+      .foot-grid { grid-template-columns: 1fr; gap: 28px; }
+      .hero-h1 { font-size: 2.2rem; }
+      .call-stats { gap: 28px; }
+      .why-images { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════════════════ -->
+<div id="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <div class="tb-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/search/?api=1&query=Tony%27s+Dockside+Services+960+Chalmer+Dr+Marco+Island+FL+34145" target="_blank">960 Chalmer Dr STE 107, Marco Island, FL 34145</a>
+        </div>
+        <div class="tb-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:2396420204">(239) 642-0204</a>
+        </div>
+        <div class="tb-item">
+          <i class="far fa-clock"></i>
+          <span>Mon–Fri 8am–6pm &nbsp;·&nbsp; Sat 8am–2pm</span>
+        </div>
+      </div>
+      <div class="tb-social">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tony%27s+Dockside+Services+960+Chalmer+Dr+Marco+Island+FL+34145" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Tony's <span class='accent'>Dockside</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:2396420204" class="btn btn-orange nav-book">Call Now</a>
+      <button class="ham" id="ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div id="mob-nav">
+    <a href="#about" onclick="closeMob()">About Us</a>
+    <a href="#services" onclick="closeMob()">Services</a>
+    <a href="#why" onclick="closeMob()">Why Us</a>
+    <a href="#testimonials" onclick="closeMob()">Reviews</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="tel:2396420204" class="mob-book">Call (239) 642-0204</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-slides">
+    <div class="hero-slide active">
+      <img src="images/hero-bg.jpg" alt="Tony's Dockside Services boat">
+    </div>
+    <div class="hero-slide">
+      <img src="images/gallery-1.jpg" alt="Boat at Tony's Dockside Services">
+    </div>
+    <div class="hero-slide">
+      <img src="images/gallery-3.jpg" alt="Shop interior with vehicles">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-sub">Marco Island's Boat Repair Experts Since 1987</p>
+      <h1 class="hero-h1">
+        Mercury. Yamaha.<br>
+        <span class="accent">Power-Pole.</span><br>
+        Done Right Since '87.
+      </h1>
+      <p class="hero-desc">
+        Authorized Mercury & Yamaha service. Power-Pole dealer. Marco Island's most trusted boat shop.
+      </p>
+      <div class="hero-btns">
+        <a href="tel:2396420204" class="btn btn-orange">
+          <i class="fas fa-phone"></i> Call Now
+        </a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══════════════════════════════════════════════════════════ -->
+<section id="trust">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-certificate"></i></div>
+        <div class="t-text">
+          <h4>Authorized Mercury &amp; Yamaha</h4>
+          <p>Factory-trained technicians for Mercury &amp; Yamaha outboards</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="t-text">
+          <h4>Power-Pole Dealer</h4>
+          <p>Authorized sales &amp; installation of Power-Pole anchoring systems</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="t-icon"><i class="fas fa-car"></i></div>
+        <div class="t-text">
+          <h4>Serving Marco Island Since 1987</h4>
+          <p>Nearly 40 years keeping local boats running at their best</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══════════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">About Tony's Dockside Services</span>
+        <h2>WELCOME TO <span class="accent">20TH STREET AUTO</span></h2>
+        <p>
+          Tony's Dockside Services has been Marco Island's go-to boat repair shop since 1987. Located at 960 Chalmer Dr, we are an authorized Mercury and Yamaha service center and an authorized Power-Pole dealer — serving boat owners across Marco Island, Isles of Capri, and the surrounding waterways.
+        </p>
+        <p>
+          Whether your outboard needs a tune-up, your hull needs repair, or you're looking to add a Power-Pole anchoring system, our experienced team handles it with precision. We've kept the boats of Marco Island running for nearly four decades — and we stand behind every repair we make.
+        </p>
+        <ul class="about-bullets">
+          <li><i class="fas fa-check"></i> Authorized Mercury &amp; Yamaha Service</li>
+          <li><i class="fas fa-check"></i> Authorized Power-Pole Dealer</li>
+          <li><i class="fas fa-check"></i> Serving Marco Island Since 1987</li>
+        </ul>
+        <div class="about-btns">
+          <a href="#services" class="btn btn-ghost">Our Services</a>
+          <a href="tel:2396420204" class="btn btn-orange"><i class="fas fa-phone"></i> Call Now (239) 642-0204</a>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="images/shop-interior.jpg" alt="Yamaha outboard service at Tony's Dockside">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ═══════════════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete Marine Service for <span class="accent">Marco Island Boat Owners</span></h2>
+      <p>We offer a full range of automotive services — from routine maintenance to complex repairs. We work to exceptionally high standards to get you back on the water fast.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/gallery-4.jpg" alt="Engine diagnostics">
+          <div class="svc-icon-wrap"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Diagnostics</h3>
+          <p>Check engine light, drivability issues, electrical faults. We find the actual cause — not just the symptom.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/gallery-3.jpg" alt="Brake and suspension service">
+          <div class="svc-icon-wrap"><i class="fas fa-circle-notch"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Brakes &amp; Suspension</h3>
+          <p>Complete brake service, steering and suspension inspection. We keep your vehicle stopping and handling the way it should.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/hero-bg.jpg" alt="Oil change and maintenance">
+          <div class="svc-icon-wrap"><i class="fas fa-oil-can"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Maintenance</h3>
+          <p>Oil changes, fluid services, filters, batteries, belts, and full preventative maintenance to protect your investment.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/gallery-2.jpg" alt="Engine and cooling repair">
+          <div class="svc-icon-wrap"><i class="fas fa-temperature-high"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Engine &amp; Cooling</h3>
+          <p>Overheating, coolant leaks, cooling system service, and engine repair. We catch issues before they become costly.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/gallery-1.jpg" alt="Transmission service">
+          <div class="svc-icon-wrap"><i class="fas fa-cogs"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Transmission Service</h3>
+          <p>Transmission diagnostics, fluid service, and honest repair recommendations. We'll tell you exactly what it needs.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-img">
+          <img src="images/gallery-4.jpg" alt="Pre-purchase inspection">
+          <div class="svc-icon-wrap"><i class="fas fa-clipboard-check"></i></div>
+        </div>
+        <div class="svc-body">
+          <h3>Pre-Purchase Inspections</h3>
+          <p>Buying a used car? Get a thorough, unbiased inspection report before you commit. Know exactly what you're getting.</p>
+          <a href="tel:2396420204" class="svc-link"><i class="fas fa-arrow-right"></i> Schedule Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CALL BAND ══════════════════════════════════════════════════════════ -->
+<section id="call-band">
+  <div class="container">
+    <div class="call-inner">
+      <div class="call-text">
+        <h2>Need Auto Repair? Call Us Today <span class="accent">(239) 642-0204</span></h2>
+      </div>
+      <div class="call-stats">
+        <div class="stat">
+          <div class="num" data-target="37">0</div>
+          <div class="lbl">Years Serving Marco Island</div>
+        </div>
+        <div class="stat">
+          <div class="num" data-target="1000">0</div>
+          <div class="lbl">Boats Serviced</div>
+        </div>
+      </div>
+      <div class="call-cta">
+        <a href="tel:2396420204" class="call-phone">(239) 642-0204</a>
+        <a href="tel:2396420204" class="btn btn-orange btn-sm"><i class="fas fa-phone"></i> Book Service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY ════════════════════════════════════════════════════════════════ -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-images">
+        <div class="why-img-main">
+          <img src="images/shop-interior.jpg" alt="Technician at work">
+        </div>
+        <div class="why-img-sm">
+          <img src="images/gallery-4.jpg" alt="Engine work">
+        </div>
+        <div class="why-img-sm">
+          <img src="images/gallery-3.jpg" alt="Shop interior">
+        </div>
+      </div>
+      <div class="why-content">
+        <span class="eyebrow">Why Marco Island Trusts Tony's</span>
+        <h2>37 Years. <span class="accent">Factory Authorized.</span> Marco Island's <span class="accent">Boat Experts.</span></h2>
+        <p>
+          From simple checks to in-depth vehicle diagnostics, our experienced team is here for you. We strive to make every visit smooth, hassle-free, and affordable. Give us a call at <a href="tel:2396420204" style="color:var(--orange);">(239) 642-0204</a> or stop by at 960 Chalmer Dr STE 107, Marco Island.
+        </p>
+        <ul class="why-list">
+          <li><i class="fas fa-check-circle"></i> Expertise &amp; Experience</li>
+          <li><i class="fas fa-check-circle"></i> Quality Parts and Equipment</li>
+          <li><i class="fas fa-check-circle"></i> Safety and Reliability</li>
+          <li><i class="fas fa-check-circle"></i> Warranty and Guarantee</li>
+          <li><i class="fas fa-check-circle"></i> Value for Money</li>
+          <li><i class="fas fa-check-circle"></i> Precision &amp; Professionalism</li>
+        </ul>
+        <div class="why-btns">
+          <a href="tel:2396420204" class="btn btn-orange"><i class="fas fa-phone"></i> Call Now (239) 642-0204</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ═══════════════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-top">
+      <span class="eyebrow">Testimonials</span>
+      <h2>What Our Customers Say <span class="accent">About Us</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-img">
+        <img src="images/gallery-3.jpg" alt="Shop interior">
+      </div>
+      <div class="testi-right">
+        <!-- Slide 1 -->
+        <div class="testi-card testi-slide active">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The team at Tony's Dockside Services"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div>
+              <div class="testi-name">Michael R.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="testi-card testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Brought my truck in for brakes and they handled it quickly and professionally. Prices were fair, communication was great, and they had me back on the water the same day. Highly recommend!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">J</div>
+            <div>
+              <div class="testi-name">Jennifer L.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="testi-card testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Bought a used center console and had Tony's do a pre-purchase inspection first. They caught a few things the seller didn't disclose — saved me thousands. Worth every penny."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">D</div>
+            <div>
+              <div class="testi-name">David T.</div>
+              <div class="testi-source">Google Review</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide dots -->
+        <div style="display:flex;gap:8px;justify-content:center;padding:8px 0;">
+          <button onclick="goTesti(0)" id="td0" style="width:10px;height:10px;border-radius:50%;background:var(--orange);border:none;cursor:pointer;padding:0;"></button>
+          <button onclick="goTesti(1)" id="td1" style="width:10px;height:10px;border-radius:50%;background:var(--border);border:none;cursor:pointer;padding:0;"></button>
+          <button onclick="goTesti(2)" id="td2" style="width:10px;height:10px;border-radius:50%;background:var(--border);border:none;cursor:pointer;padding:0;"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ════════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-photo">
+        <img src="images/gallery-1.jpg" alt="Tony's Dockside Services">
+      </div>
+      <div class="contact-info">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Get in <span class="accent">Touch</span></h2>
+        <p>We guarantee a hassle-free experience. We're upfront and honest with every customer. Stop by or give us a call — we're here to help.</p>
+        <div class="c-details">
+          <div class="c-detail">
+            <h5>Get Directions</h5>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tony%27s+Dockside+Services+960+Chalmer+Dr+Marco+Island+FL+34145" target="_blank">960 Chalmer Dr STE 107<br>Marco Island, FL 34145</a>
+          </div>
+          <div class="c-detail">
+            <h5>Call Today</h5>
+            <a href="tel:2396420204" class="big-phone">(239) 642-0204</a>
+          </div>
+          <div class="c-detail">
+            <h5>Business Hours</h5>
+            <div class="hrs">
+              <div class="hr-row"><span class="d">Mon–Fri</span><span>8AM–5PM</span></div>
+              <div class="hr-row"><span class="d">Saturday</span><span style="color:#ef4444;">Closed</span></div>
+              <div class="hr-row"><span class="d">Sunday</span><span style="color:#ef4444;">Closed</span></div>
+            </div>
+          </div>
+          <div class="c-detail">
+            <h5>Email</h5>
+            <a href="mailto:tonysdockside@gmail.com" style="font-size:.82rem;">tonysdockside@gmail.com</a>
+          </div>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=20th+Street+Auto+Service+Inc,+1990+N+Dixie+Hwy,+Boca+Raton,+FL+34145&output=embed&z=15"
+            allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Tony's <span class='accent'>Dockside</span></div>
+        <p class="foot-desc">Marco Island's premier boat repair shop since 1987. Mercury & Yamaha authorized. Power-Pole dealer. 960 Chalmer Dr STE 107.</p>
+        <div class="foot-social">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Tony%27s+Dockside+Services+960+Chalmer+Dr+Marco+Island+FL+34145" target="_blank" title="Google"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Outboard Engine Service</a></li>
+          <li><a href="#services">Boat Repair &amp; Fiberglass</a></li>
+          <li><a href="#services">Marine Electrical</a></li>
+          <li><a href="#services">Trailer Sales &amp; Service</a></li>
+          <li><a href="#services">Power-Pole Installation</a></li>
+          <li><a href="#services">Pre-Purchase Inspections</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:2396420204">(239) 642-0204</a></li>
+          <li><a href="mailto:tonysdockside@gmail.com">Email Us</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Tony%27s+Dockside+Services+960+Chalmer+Dr+Marco+Island+FL+34145" target="_blank">960 Chalmer Dr STE 107, Marco Island FL</a></li>
+        </ul>
+        <div style="margin-top:14px;font-size:.82rem;color:var(--gray);line-height:2;">
+          Mon–Fri 8AM–6PM · Sat 8AM–2PM<br>Sunday Closed
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2025 Tony's Dockside Services, LLC. All rights reserved.</p>
+      <p>Marco Island, FL 34145</p>
+    </div>
+  </div>
+</footer>
+
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // Scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('top-btn').classList.toggle('show', scrollY > 500);
+  });
+
+  // Mobile menu
+  document.getElementById('ham').addEventListener('click', () => {
+    const m = document.getElementById('mob-nav');
+    m.style.display = m.style.display === 'block' ? 'none' : 'block';
+  });
+  function closeMob() { document.getElementById('mob-nav').style.display = 'none'; }
+
+  // Hero slideshow
+  let slide = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  setInterval(() => {
+    slides[slide].classList.remove('active');
+    slide = (slide + 1) % slides.length;
+    slides[slide].classList.add('active');
+    // restart ken burns
+    const img = slides[slide].querySelector('img');
+    img.style.animation = 'none';
+    img.offsetHeight; // reflow
+    img.style.animation = '';
+  }, 5000);
+
+  // Counter animation
+  function animateCounter(el) {
+    const target = +el.dataset.target;
+    const dur = 2000;
+    const step = target / (dur / 16);
+    let cur = 0;
+    const timer = setInterval(() => {
+      cur += step;
+      if (cur >= target) { cur = target; clearInterval(timer); }
+      el.textContent = Math.floor(cur) + '+';
+    }, 16);
+  }
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); obs.unobserve(e.target); } });
+  }, { threshold: .5 });
+  document.querySelectorAll('.num[data-target]').forEach(el => obs.observe(el));
+
+  // Testimonial slider
+  let t = 0;
+  const tes = document.querySelectorAll('.testi-slide');
+  const dots = [document.getElementById('td0'), document.getElementById('td1'), document.getElementById('td2')];
+  function goTesti(n) {
+    tes[t].classList.remove('active');
+    dots[t].style.background = 'var(--border)';
+    t = n;
+    tes[t].classList.add('active');
+    dots[t].style.background = 'var(--orange)';
+  }
+  setInterval(() => goTesti((t + 1) % tes.length), 5000);
+</script>
+</body>
+</html>
