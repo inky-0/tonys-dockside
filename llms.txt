@@ -6,6 +6,7 @@
 - Phone: (239) 642-0204
 - Email: tonysdockside@gmail.com
 - Address: 960 Chalmer Dr STE 107, Marco Island, FL 34145
+- Website: https://tonys-dockside-production.up.railway.app/
 
 ## Services
   - Diagnostics
@@ -15,5 +16,10 @@
   - Transmission Service
   - Pre-Purchase Inspections
 
-## Links
+## Service Area
+- Primary: Marco Island, FL
+- Also serving: greater Marco Island metropolitan area
+
+## Pages
 - [Homepage](https://tonys-dockside-production.up.railway.app/)
+- [FAQ](https://tonys-dockside-production.up.railway.app/faq.html)
