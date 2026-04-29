@@ -1,6 +1,6 @@
-# Boat Repair in Marco Island, FL
+# Tony's Dockside Services
 
-> Marco Island's premier boat repair shop since 1987. Mercury & Yamaha authorized service, Power-Pole dealer. Call (239) 642-0204.
+> Professional boat repair and dockside services in Marco Island, FL. Marine mechanics, engine repair, and maintenance.
 
 ## Contact
 - Phone: (239) 642-0204
@@ -8,13 +8,16 @@
 - Address: 960 Chalmer Dr STE 107, Marco Island, FL 34145
 - Website: https://tonys-dockside-production.up.railway.app/
 
+## Hours
+Mo-Fr 08:00-17:00
+
 ## Services
-  - Diagnostics
-  - Brakes &amp; Suspension
-  - Maintenance
-  - Engine &amp; Cooling
-  - Transmission Service
-  - Pre-Purchase Inspections
+  - Boat Repair
+  - Engine Service
+  - Dockside Maintenance
+  - Marine Electronics
+  - Bottom Painting
+  - Hauling
 
 ## Service Area
 - Primary: Marco Island, FL
